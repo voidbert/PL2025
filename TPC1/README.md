@@ -98,9 +98,20 @@ nó:
 ## Resultados
 
 O programa desenvolvido foi testado para o exemplo dado e confirmou-se que este funcionava
-corretamente. Por fim, visto que vários conceitos de programação funcional (tipos de dados
-algébricos, `map`s, _etc._) foram utilizados, o mesmo programa foi reimplementado em Haskell. A
-implementação em Haskell apresenta o mesmo funcionamento que a de Python, mas é muito mais concisa.
+corretamente. Para testar o programa, o seguinte comando pode ser executado:
+
+<pre>
+$ python3 <a href="TPC.py">TPC.py</a> < "fonte"
+</pre>
+
+Por fim, visto que vários conceitos de programação funcional (tipos de dados algébricos, `map`s,
+_etc._) foram utilizados, o mesmo programa foi reimplementado em Haskell. A implementação em Haskell
+apresenta o mesmo funcionamento que a de Python, mas é muito mais concisa. Pode ser executada do
+seguinte modo:
+
+<pre>
+$ ghci <a href="TPC.hs">TPC.hs</a> < "fonte"
+</pre>
 
 ## Autoria
 
