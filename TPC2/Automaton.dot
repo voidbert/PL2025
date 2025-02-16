@@ -1,0 +1,28 @@
+digraph {
+    graph [rankdir=LR fontname=monospace bgcolor=white]
+    node  [fontname=monospace]
+    edge  [fontname=monospace]
+
+    0  [style="invis"]
+    I  [group=g1]
+    R  [group=g1 color="blue" fontcolor="blue"]
+    A1 [group=g1 label=<A<SUB>1</SUB>> color="red" fontcolor="red"]
+    A2 [group=g1 label=<A<SUB>2</SUB>> color="red" fontcolor="red"]
+    F  [peripheries=2]
+
+    0 -> I
+
+    I -> F [label="\n " xlabel="\n[\\n;]" color="forestgreen" fontcolor="forestgreen"]
+
+    edge [color="blue" fontcolor="blue"]
+    I -> R [label="[^\"\\n;]"]
+    R -> R [label="[^\\n;]"]
+    R -> F [label="[\\n;]"]
+
+    edge [color="red" fontcolor="red"]
+    I -> A1  [label="\""]
+    A1 -> A2 [label="\""]
+    A1 -> A1 [label="[^\"]"]
+    A2 -> A1 [label="\""]
+    A2 -> F  [label="[\\n;]"]
+}
