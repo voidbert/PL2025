@@ -1,0 +1,20 @@
+[
+    {
+        "cod": "A23",
+        "nome": "\u00c1gua 0.5L",
+        "quant": 7,
+        "preco": 0.7
+    },
+    {
+        "cod": "A24",
+        "nome": "Compal Manga Laranja",
+        "quant": 4,
+        "preco": 1.1
+    },
+    {
+        "cod": "B25",
+        "nome": "Salame de chocolate",
+        "quant": 3,
+        "preco": 0.8
+    }
+]
