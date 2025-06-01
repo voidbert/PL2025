@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0" version="27.1.1">
+  <diagram name="Page-1" id="DUwigr2joHMoVCVtBpro">
+    <mxGraphModel dx="982" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="780" pageHeight="280" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-13" value="&lt;div&gt;Tokens&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=CMU Serif;" edge="1" parent="1" source="OqKCz7SQ-RbIAd_jBmqN-1" target="OqKCz7SQ-RbIAd_jBmqN-2">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-1" value="Análise Léxica" style="rounded=0;whiteSpace=wrap;html=1;textDirection=vertical-rl;fontFamily=CMU Serif;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="121" y="40" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OqKCz7SQ-RbIAd_jBmqN-2" target="OqKCz7SQ-RbIAd_jBmqN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-15" value="GSA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=CMU Serif;" vertex="1" connectable="0" parent="OqKCz7SQ-RbIAd_jBmqN-14">
+          <mxGeometry x="0.0444" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-2" value="Análise Sintática e Semântica" style="rounded=0;whiteSpace=wrap;html=1;textDirection=vertical-rl;fontFamily=CMU Serif;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="241" y="40" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-16" value="&lt;div&gt;GSA&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=CMU Serif;" edge="1" parent="1" source="OqKCz7SQ-RbIAd_jBmqN-3" target="OqKCz7SQ-RbIAd_jBmqN-4">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-3" value="&lt;div&gt;Otimização do GSA&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;textDirection=vertical-rl;fontFamily=CMU Serif;rotation=-180;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="361" y="40" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-17" value="EWVM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=CMU Serif;" edge="1" parent="1" source="OqKCz7SQ-RbIAd_jBmqN-4" target="OqKCz7SQ-RbIAd_jBmqN-5">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-4" value="&lt;div&gt;Geração de Código&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;textDirection=vertical-rl;fontFamily=CMU Serif;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="481" y="40" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OqKCz7SQ-RbIAd_jBmqN-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681" y="139.75862068965523" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-22" value="&lt;font face=&quot;CMU Serif&quot;&gt;EWVM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OqKCz7SQ-RbIAd_jBmqN-20">
+          <mxGeometry x="-0.0734" y="-1" relative="1" as="geometry">
+            <mxPoint x="49" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-5" value="Otimização&amp;nbsp;&lt;i&gt;peephole&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;textDirection=vertical-rl;fontFamily=CMU Serif;rotation=-180;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="601" y="40" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OqKCz7SQ-RbIAd_jBmqN-23" value="&lt;font face=&quot;CMU Serif&quot;&gt;Source&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;entryX=0.994;entryY=0.506;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry x="-1" y="23" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="139" as="sourcePoint" />
+            <mxPoint x="121.24000000000001" y="138.7999999999999" as="targetPoint" />
+            <mxPoint x="-23" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

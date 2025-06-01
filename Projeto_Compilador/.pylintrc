@@ -1,0 +1,79 @@
+[MAIN]
+
+# Use multiple processes to speed up Pylint.
+jobs=0
+
+# Pickle collected data for later comparisons.
+persistent=yes
+
+# Python version used by the project.
+py-version=3.13
+
+# Discover python modules and packages in the file system subtree.
+recursive=yes
+
+[BASIC]
+
+# Naming style matching correct class attribute names.
+class-attribute-naming-style=snake_case
+
+# Good variable names which should always be accepted, separated by a comma.
+good-names=i,
+           j,
+           k,
+           _
+
+# Support ply syntax
+good-names-rgxs=^t_(ignore_)?[A-Z_]+$,
+                ^p_[^\W\da-z][^\W_]*$
+
+# Include a hint for the correct naming format with invalid-name.
+include-naming-hint=yes
+
+# Remove docstring requirements.
+no-docstring-rgx=.*
+
+# Naming style matching correct module names.
+module-rgx=^test_[a-z]+|__[a-z]+__|[a-z]+$
+
+[FORMAT]
+
+# Expected format of line ending.
+expected-line-ending-format=LF
+
+# Number of spaces of indent required inside a hanging or continued line.
+indent-after-paren=4
+
+[MESSAGES CONTROL]
+
+disable=raw-checker-failed,
+        locally-disabled,
+        suppressed-message,
+
+        duplicate-code,
+        missing-module-docstring,
+        too-few-public-methods,
+        no-else-break,
+        no-else-raise,
+        no-else-return,
+        global-statement,
+
+        too-many-ancestors,
+        too-many-arguments,
+        too-many-boolean-expressions,
+        too-many-branches,
+        too-many-format-args,
+        too-many-function-args,
+        too-many-instance-attributes,
+        too-many-lines,
+        too-many-locals,
+        too-many-nested-blocks,
+        too-many-positional-arguments,
+        too-many-public-methods,
+        too-many-return-statements,
+        too-many-statements
+
+[STRING]
+
+# Inconsistent quotes warning.
+check-quote-consistency=yes

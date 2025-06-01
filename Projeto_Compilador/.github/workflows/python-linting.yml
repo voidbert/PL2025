@@ -1,0 +1,25 @@
+name: Python linting
+on:
+    pull_request:
+        paths:
+            - 'plpc/**'
+            - 'tests/**'
+            - '.github/workflows/**'
+            - 'pyproject.toml'
+            - 'setup.py'
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - run: sudo add-apt-repository -y ppa:deadsnakes/ppa
+            - run: sudo apt update -y && DEBIAN_FRONTEND=noninteractive sudo -E apt install -y python3.13 python3.13-venv
+            - run: python3.13 -m venv .venv
+            - run: |
+                source .venv/bin/activate
+                pip install pylint mypy pytest .
+                pylint plpc tests
+                mypy plpc tests
+                timeout 3m pytest

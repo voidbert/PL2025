@@ -1,0 +1,28 @@
+digraph {
+    rankdir="TR"
+    ordering="out"
+
+    "..." [shape=plaintext]
+    "variable1" [label="VariableDefinition"]
+    "variable2" [label="VariableDefinition"]
+
+    "Program" -> "\"SymbolTableExample\""
+    "Program" -> "Block"
+    "Block" -> "[VariableDefinition]"
+    "Block" -> "[CallableDefinition]"
+    "Block" -> "BeginEndStatement"
+
+    "[VariableDefinition]" -> "variable1"
+    "[VariableDefinition]" -> "variable2"
+    "variable1" -> "x"
+    "variable2" -> "y"
+
+    "[CallableDefinition]" -> "..."
+
+    "BeginEndStatement" -> "AssignStatement"
+    "AssignStatement" -> "variable2" [constraint=false]
+    "AssignStatement" -> "BinaryOperation"
+    "BinaryOperation" -> "variable2" [constraint=false]
+    "BinaryOperation" -> "+"
+    "BinaryOperation" -> "1"
+}

@@ -1,0 +1,21 @@
+# Code editors and operating systems
+.DS_Store
+.vscode
+
+# Python virtual environment
+.venv
+
+# Python bytecode
+*/__pycache__/
+
+# Python distribution
+*.egg-info/
+build/
+dist/
+
+# mypy
+.mypy_cache/
+
+# LaTeX compilation
+*-eps-converted-to.pdf
+report/build

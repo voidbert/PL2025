@@ -1,0 +1,25 @@
+digraph {
+    rankdir="TR"
+    ordering="out"
+
+    "N1" [label="*"]
+    "N2" [label="*" color=red fontcolor=red]
+    "N3" [label="*"]
+    "N4" [label="*"]
+    "x1" [label="x"]
+    "x2" [label="x"]
+    "21" [label="2" color=red fontcolor=red]
+    "22" [label="2" color=red fontcolor=red]
+    "23" [label="2"]
+    "24" [label="2"]
+
+    "N1" -> "N2"
+    "N1" -> "x1"
+    "N2" -> "21" [color=red]
+    "N2" -> "22" [color=red]
+
+    "N3" -> "N4"
+    "N3" -> "24"
+    "N4" -> "x2"
+    "N4" -> "23"
+}

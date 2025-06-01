@@ -1,0 +1,39 @@
+digraph {
+    rankdir="TR"
+    ordering="out"
+
+    "(Expression, TypeValue)1" [label="(Expression, TypeValue)"]
+    "(Expression, TypeValue)2" [label="(Expression, TypeValue)"]
+    "(Expression, TypeValue)3" [label="(Expression, TypeValue)"]
+    "(Expression, TypeValue)4" [label="(Expression, TypeValue)"]
+    "(Expression, TypeValue)5" [label="(Expression, TypeValue)"]
+    "BinaryOperation1" [label="BinaryOperation"]
+    "BinaryOperation2" [label="BinaryOperation"]
+    "REAL1" [label="REAL"]
+    "REAL2" [label="REAL"]
+    "REAL3" [label="REAL"]
+
+    "(Expression, TypeValue)1" -> "BinaryOperation1"
+    "(Expression, TypeValue)1" -> "BOOLEAN"
+
+    "BinaryOperation1" -> "(Expression, TypeValue)2"
+    "BinaryOperation1" -> "<"
+    "BinaryOperation1" -> "(Expression, TypeValue)3"
+
+    "(Expression, TypeValue)2" -> "BinaryOperation2"
+    "(Expression, TypeValue)2" -> "REAL1"
+
+
+    "BinaryOperation2" -> "(Expression, TypeValue)4"
+    "BinaryOperation2" -> "+"
+    "BinaryOperation2" -> "(Expression, TypeValue)5"
+
+    "(Expression, TypeValue)4" -> "1"
+    "(Expression, TypeValue)4" -> "INTEGER"
+
+    "(Expression, TypeValue)5" -> "5.0"
+    "(Expression, TypeValue)5" -> "REAL3"
+
+    "(Expression, TypeValue)3" -> "7.0"
+    "(Expression, TypeValue)3" -> "REAL2"
+}

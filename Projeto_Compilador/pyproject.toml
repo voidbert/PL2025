@@ -1,0 +1,55 @@
+[build-system]
+    requires = [ "setuptools", "wheel" ]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "plpc"
+    description = "UMinho's 2024/25 Language Processing class assignment"
+    version = "0.0.1"
+
+    authors = [
+        { name = "Humberto Gomes", email = "a104348@alunos.uminho.pt" },
+        { name = "José Lopes", email = "a104541@alunos.uminho.pt" },
+        { name = "José Matos", email = "a100612@alunos.uminho.pt" },
+    ]
+
+    readme = "README.md"
+    license = { file = "LICENSE" }
+
+    requires-python = ">=3.13"
+
+    keywords = [ "language-processing", "pascal", "compiler" ]
+    classifiers = [
+        "Development Status :: 2 - Pre-Alpha",
+        "Environment :: Console",
+        "Framework :: Pytest",
+        "License :: OSI Approved :: Apache Software License",
+        "Natural Language :: English",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Pascal",
+        "Topic :: Education",
+        "Topic :: Software Development :: Compilers"
+    ]
+
+    dependencies = [
+        "ply"
+    ]
+
+[project.urls]
+    Homepage = "https://github.com/voidbert/PL"
+    Repository = "https://github.com/voidbert/PL"
+    "Bug Tracker" = "https://github.com/voidbert/PL/issues"
+
+[tool.setuptools]
+packages = ['plpc']
+
+[project.scripts]
+plpc = "plpc.__main__:main"
+
+[tool.mypy]
+    disallow_untyped_defs = true
+    ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
